@@ -98,23 +98,45 @@ h2 {
   }
 
   .heads {
-    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-
+    animation: moveDownUp 2s infinite ease-in-out;
+  }
+  
+  @keyframes moveDownUp {
+    0% {
+      bottom: 50%;
+    }
+    50% {
+      bottom: 40%;
+    }
+    100% {
+      bottom: 50%;
+    }
   }
 
   .shoulders {
-    width: 30%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-
+    animation: moveRightLeft 2s infinite ease-in-out;
+  }
+  
+  @keyframes moveRightLeft {
+    0% {
+      right: 100%;
+    }
+    50% {
+      left: 20%;
+    }
+    100% {
+      left: 50%;
+    }
   }
 
   label {
@@ -155,4 +177,24 @@ h2 {
       top: 50%;
     }
   }
-    
+
+  .toes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    animation: moveLeftRight 2s infinite ease-in-out;
+  }
+
+  @keyframes moveLeftRight {
+    0% {
+      left: 20%;
+    }
+    50% {
+      right: 50%;
+    }
+    100% {
+      left: 50%;
+    }
+  }
