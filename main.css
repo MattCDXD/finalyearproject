@@ -37,13 +37,23 @@ body, html {
     left: 0;
   }
 
- .mcstart {
-   width: 30%;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  .mcstart {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%);
+    animation: moveForward 2s ease-in-out forwards;
  }
+
+ 
+@keyframes moveForward {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(380%);
+  }
+}
 
 h1 {
     text-align: center;
@@ -103,18 +113,19 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-    animation: moveDownUp 2s infinite ease-in-out;
+    animation: moveUpDown 2s ease-in-out;
+    animation-iteration-count: 1;
   }
   
-  @keyframes moveDownUp {
+  @keyframes moveUpDown {
     0% {
-      bottom: 50%;
+      top: 50%;
     }
     50% {
-      bottom: 40%;
+      top: 40%;
     }
     100% {
-      bottom: 50%;
+      top: 50%;
     }
   }
 
@@ -124,7 +135,8 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-    animation: moveRightLeft 2s infinite ease-in-out;
+    animation: moveRightLeft 2s ease-in-out;
+    animation-iteration-count: 1;
   }
   
   @keyframes moveRightLeft {
@@ -184,7 +196,8 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-    animation: moveLeftRight 2s infinite ease-in-out;
+    animation: moveLeftRight 2s ease-in-out;
+    animation-iteration-count: 1;
   }
 
   @keyframes moveLeftRight {
