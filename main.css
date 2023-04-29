@@ -1,0 +1,162 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.btn{
+    position: absolute;
+    top:50%;
+    left: 50% ;
+}
+
+.btn1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+  }
+  
+  .btn1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .parent {
+    background-color: azure;
+    background-image: url("images/backgroundimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+ .mcstart {
+   width: 30%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+h1 {
+    text-align: center;
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 50px;
+    margin: 0;
+    color: blueviolet;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 40px;
+    margin: 0;
+    color: blueviolet;
+}
+
+.btn2 {
+    background-color: wheat; 
+    color: blueviolet; 
+    border: 2px solid #4CAF50;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    position: fixed;
+    left: 60%;
+    top: 50%;
+  }
+  
+  .btn2:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .btn3 {
+    background-color: wheat; 
+    color: blueviolet; 
+    border: 2px solid #4CAF50;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    position: fixed;
+    left: 35%;
+    top: 50%;
+  }
+  
+  .btn2:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .heads {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+
+  }
+
+  .shoulders {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+
+  }
+
+  label {
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
+    font-family: 'Butterfly Kids', cursive;
+    font-size: 40px;
+    margin: 0;
+    color: blueviolet;
+  }
+
+  input {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    line-height: 150%;
+  }
+
+  .knees {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    animation: moveUpDown 2s infinite ease-in-out;
+    animation-name: moveUpDown;
+    animation-duration: 2s;
+     }
+
+     @keyframes moveUpDown {
+      0% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 50px;
+      }
+      100% {
+        bottom: 0;
+      }
+    }
+
+    
