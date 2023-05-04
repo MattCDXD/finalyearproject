@@ -51,7 +51,7 @@ body, html {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(380%);
+    transform: translateX(600%);
   }
 }
 
@@ -209,5 +209,23 @@ h2 {
     }
     100% {
       left: 50%;
+    }
+  }
+
+  .sun {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    animation: move-image 3s forwards;
+  }
+
+  @keyframes move-image {
+    from {
+      top: -100px;
+      right: -100px;
+    }
+    to {
+      top: 50px;
+      right: 50px;
     }
   }
