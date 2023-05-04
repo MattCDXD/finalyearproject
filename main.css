@@ -39,8 +39,9 @@ body, html {
 
   .mcstart {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
+    height: 400px;
     transform: translateX(-100%);
     animation: moveForward 2s ease-in-out forwards;
  }
@@ -51,7 +52,7 @@ body, html {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(600%);
+    transform: translateX(330%);
   }
 }
 
