@@ -19,9 +19,33 @@
 <img class="sun" src="images/cartoonsun.png" />
 <img class="knees" src="images/knees-PhotoRoom.png" />
 <h2 class="textgrow"> HEAD SHOULDERS ____ AND TOES?</h2>
-<label for="touching" class="whattouch">What are they currently touching? </label>
-<input type="text" id="touching" name="touching">
-<input type="submit" value="Submit"><br><br>
+<label for="touching" class="whatflicker">What are they currently touching? </label>
+<form>
+    <select name="whattouching" id="whattouching">
+      <option value="head">Head</option>
+      <option value="shoulders">Shoulders</option>
+      <option value="knees">Knees</option>
+      <option value="toes">Toes</option>
+    </select><br><br>
+    <input type="button" value="Submit" class="myButton" onclick="displaySelection()">
+  </form>
+  
+  <p id="result"  class="whatColor"></p>
+  
+  <script>
+  function displaySelection() {
+    var dropdown = document.getElementById("whattouching");
+    var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+    var correctValue = "knees"; 
+    var result = document.getElementById("result");
+    
+    if (selectedValue === correctValue) {
+      result.innerHTML = "Correct! You selected " + selectedValue + ".";
+    } else {
+      result.innerHTML = "Sorry, that's not correct. Please try again.";
+    }
+  }
+  </script>
 <a href="pagethree.html">
     <button class="btn3">Previous Page</button>
 </a>
