@@ -72,6 +72,69 @@ h2 {
     color: blueviolet;
 }
 
+.textgrow {
+  animation: grow-shrink 2s ease-in-out, color-change 4s ease-in-out;
+  animation-iteration-count: 15;
+
+}
+
+@keyframes grow-shrink {
+  0% {
+    font-size: 50px;
+  }
+  50% {
+    font-size: 60px;
+  }
+  100% {
+    font-size: 50px;
+  }
+}
+
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+
+.whattouch {
+  animation: typing 4s steps(25) forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.whatflicker {
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .btn2 {
     background-color: wheat; 
     color: blueviolet; 
@@ -115,7 +178,7 @@ h2 {
     transform: translate(-50%, -50%);
     width: 200px;
     animation: moveUpDown 2s ease-in-out;
-    animation-iteration-count: 1;
+    animation-iteration-count: 3;
   }
   
   @keyframes moveUpDown {
@@ -230,3 +293,12 @@ h2 {
       right: 50px;
     }
   }
+
+
+  
+  
+  
+  
+  
+  
+  
