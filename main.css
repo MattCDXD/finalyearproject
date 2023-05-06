@@ -130,6 +130,8 @@ p {
 }
 
 .whatColor {
+  position: absolute;
+  left: 35%;
   animation: color-alternate 4s ease-in-out;
   animation-iteration-count: 15;
 }
@@ -322,7 +324,32 @@ p {
     }
   }
 
+  .thanks {
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    animation: lightSpeedIn 1s ease-in-out;
+  }
 
+  @keyframes lightSpeedIn {
+    0% { 
+       transform: translateX(100%) skewX(-30deg); 
+       opacity: 0; 
+    } 
+    60% { 
+       transform: translateX(-10%) skewX(40deg); 
+       opacity: 1; 
+    } 
+    80% { 
+       transform: translateX(0%) skewX(-25deg); 
+       opacity: 1; 
+    } 
+    100% { 
+       transform: translateX(0%) skewX(0deg); 
+       opacity: 1; 
+    } 
+ } 
+  
   
   
   
