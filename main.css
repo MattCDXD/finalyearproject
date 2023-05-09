@@ -131,7 +131,7 @@ p {
 
 .whatColor {
   position: absolute;
-  left: 35%;
+  left: 45%;
   animation: color-alternate 4s ease-in-out;
   animation-iteration-count: 15;
 }
@@ -393,12 +393,12 @@ p {
     position: absolute;
     top: 20%;
     left: 37%;
-    animation: lightSpeedIn 1s ease-in-out, growWords 4s ease-in-out;
+    animation: speedIn 1s ease-in-out, growWords 4s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
 
-@keyframes lightSpeedIn {
+@keyframes speedIn {
     0% { 
        transform: translateX(100%) skewX(-30deg); 
        opacity: 0; 
