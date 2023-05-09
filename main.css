@@ -312,15 +312,36 @@ p {
     right: -100px;
     animation: move-image 3s forwards;
   }
-
+  
   @keyframes move-image {
     from {
       top: -100px;
       right: -100px;
+      transform: scale(1);
     }
     to {
       top: 50px;
       right: 50px;
+      transform: scale(1.5);
+    }
+  }
+
+  .dog {
+    position: absolute;
+    bottom: 0;
+    left: -300px;
+    animation: run-dog 5s linear;
+    animation-iteration-count: 4;
+    width: 300px;
+    height: 300px; 
+  }
+  
+  @keyframes run-dog {
+    0% {
+      transform: scale(0.5) translateX(-300%);
+    }
+    100% {
+      transform: scale(0.5) translateX(2000%);
     }
   }
 
@@ -328,10 +349,12 @@ p {
     position: absolute;
     top: 20%;
     left: 37%;
-    animation: lightSpeedIn 1s ease-in-out;
-  }
+    animation: lightSpeedIn 1s ease-in-out, growWords 4s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
 
-  @keyframes lightSpeedIn {
+@keyframes lightSpeedIn {
     0% { 
        transform: translateX(100%) skewX(-30deg); 
        opacity: 0; 
@@ -349,6 +372,24 @@ p {
        opacity: 1; 
     } 
  } 
+
+ @keyframes growWords {
+  0% {
+    font-size: 30px;
+    font-weight: normal;
+  }
+  50% {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+  100% {
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 1;
+    color: red;
+  }
+}
   
   
   
