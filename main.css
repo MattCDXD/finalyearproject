@@ -83,12 +83,12 @@ p {
 }
 
 .textgrow {
-  animation: grow-shrink 2s ease-in-out, color-change 4s ease-in-out;
+  animation: grownshrink 2s ease-in-out, color-change 4s ease-in-out;
   animation-iteration-count: 15;
 
 }
 
-@keyframes grow-shrink {
+@keyframes grownshrink {
   0% {
     font-size: 50px;
   }
@@ -269,7 +269,8 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
-    animation: moveUpDown 2s infinite ease-in-out;
+    animation: moveUpDown 2s ease-in-out;
+    animation-iteration-count: 7;
   }
   
   @keyframes moveUpDown {
@@ -351,7 +352,7 @@ p {
     left: -200px;
     width: 300px;
     height: 300px;
-    animation: move-spaceship 3s forwards;
+    animation: move-spaceship 1s forwards;
   }
   
   @keyframes move-spaceship {
@@ -364,6 +365,26 @@ p {
       top: 100px;
       left: 0;
       transform: scale(0.8);
+    }
+  }
+
+  .spaceshipTwo {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    animation: move-spaceshiptwo 3s forwards;
+  }
+  
+  @keyframes move-spaceshiptwo {
+    from {
+      top: 100px;
+      left: 100px;
+    }
+    to {
+      top: -300px;
+      left: -300px;
     }
   }
 
